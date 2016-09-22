@@ -101,6 +101,7 @@ p {
 	#container a {
 		font-size: 21px;
 	}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -242,6 +243,9 @@ p {
 		margin-top: 20px;
 		width: 30px;
 	}
+	#container a {
+		font-size: 15px;
+	}
 }
 @media screen and (max-width: 400px) {
 	.infographic04-right a{
@@ -261,6 +265,9 @@ p {
 	width: 100%;
 	margin: 80px auto 50px auto;
 	text-align: center;
+}
+.infographic05-con a {
+	line-height: 35px;
 }
 #a-next-to {
 	color: #c40027 !important;
@@ -295,5 +302,50 @@ p {
 	color: #003a7d;
 	font-size: 20px;
 	font-weight: 500;
-	margin-top: 30px;
+	margin-top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+	.infographic05-con a {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 700px) {
+	#under05-party {
+		font-size: 15px;
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.infographic05-con {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.infographic05-party {
+		margin-top: 30px;
+	}
+	#under05-party {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 550px){
+	.infographic05-party p {
+		width: 20px;
+		height: 45px;
+	}
+}
+@media screen and (max-width: 400px) {
+	#under05-party {
+		font-size: 8px;
+	}
+	.infographic05-con a {
+		font-size: 11px;
+	}
+	.infographic05-party p {
+		width: 17px;
+		height: 40px;
+	}
+	#container a {
+		font-size: 11px;
+	}
 }

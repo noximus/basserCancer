@@ -1,34 +1,99 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	margin: 0;
+
+}
 #container {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    position: absolute;
+	background-color: #f6f6f6;
+	font-size: 29px;
+	letter-spacing: 0.5px;
+	line-height: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
     width:100%;
-    height:350px; 
     overflow:hidden;
-}
-.show{
-    position: absolute;
-    display:block;
-    opacity:1;
-}
-.hidden{
-    position: absolute;
-    display:none;
-    opacity:0;
+    position: relative;
 }
 
-#container div {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+#container a{
+    display: block;
+   color: #128cc4;
+}
+#stripe1 {
+    height: 45px;
+    background-color: #003c7b;
+}
+#stripe2{
+	background-color: white;
+    height: 20px;
+}
+#stripe3 {
+	background-color: #6ddaed;
+    height: 45px;
+}
+#line1 {
+	width: 550px;
+	text-align: left;
+	margin: 52px auto 30px auto
+}
+#line2 {
+	width: 550px;
+	text-align: right;
+	margin: 20px auto 60px auto;
 }
 
-#img {
+#circle-con {
+	width: 175px;
+	height: 175px;
+	border-radius: 50%;
+	background-color: #f6f6f6;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top: -110px;
+	margin-left: -110px;
+	padding: 20px;
+
+}
+#inner-circle {
+
+	display: table;
+	width: 115px;
+	height: 115px;
+	padding: 30px;
+	border-radius: 50%;
+	 background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#da192b, #b11423); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#da192b, #b11423); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#da192b, #b11423); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#da192b, #b11423); /* Standard syntax */
+}
+#circle-con #qrt-border {
+	position: absolute;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+#inner-circle2 {
+	 display: table-cell;
+	background-color: #f6f6f6;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+#inner-circle2 a{
+	color:#003c7b;
+	word-spacing: 0px;
+	display: inline-block;
+}
+#inner-circle2 a:nth-child(2){
+	font-size: 30px;
+}
 
 }

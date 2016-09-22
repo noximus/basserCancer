@@ -152,6 +152,13 @@ body {
 	width: 25%;
 	height: 100%;
 	float: right;
+	background-color:#ff0000;
+}
+.infographic04-top a:nth-child(2){
+	 background-color:#ff795f;
+}
+.infographic04-top a:nth-child(3){
+	 background-color:#bf0028;
 }
 .infographic04-con {
 	width: 700px;
@@ -167,6 +174,11 @@ body {
 }
 .a-next-to {
 	display: inline-block !important;
+}
+#red-inline{
+	margin-left:5px; 
+	color:#c40027 !important; 
+	font-weight:500;
 }
 .infographic04-right {
 	width: auto;

@@ -92,6 +92,12 @@ body {
 	font-size: 30px;
 }
 
+@media screen and (max-width: 700px) {
+	#container a {
+		font-size: 21px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	#container a {
 		font-size: 18px;
@@ -166,8 +172,9 @@ body {
 	min-height: 200px;
 }
 .infographic04-left {
-	width: 270px;
+	width: auto;
 	float: left;
+	margin-left: 10px;
 }
 .infographic04-left a{
 	margin-top: 10px;
@@ -184,7 +191,7 @@ body {
 	width: auto;
 	overflow: hidden;
 	min-height: 200px;
-	padding-left: 20px;
+	padding-left: 30px;
 	padding-top: 20px;
 } 
 .infographic04-right a {
@@ -218,4 +225,29 @@ body {
 .infographic04-bot a:nth-child(2){
 	width: 75%;
 	background-color: #40d1e4;
+}
+
+@media screen and (max-width: 600px) {
+	.infographic04-right a {
+		width: 40px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.infographic04-right a {
+		margin-top: 20px;
+		width: 30px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.infographic04-right a{
+		width: 22px;
+	}
+	.infographic04-right{
+		padding-left: 7px;
+	}
+	.infographic04-con {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }

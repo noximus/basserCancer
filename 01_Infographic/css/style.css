@@ -57,7 +57,7 @@ body {
 	padding: 20px;
 
 }
-#inner-circle {	
+#infographic-01-inner-circle {	
 	display: table;
 	width: 115px;
 	height: 115px;
@@ -72,7 +72,7 @@ body {
 
 
 
-#inner-circle2 {
+#infographic-01-inner-circle2 {
 	display: table-cell;
 	background-color: #f6f6f6;
 	border-radius: 50%;
@@ -82,12 +82,12 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
-#inner-circle2 a{
+#infographic-01-inner-circle2 a{
 	color:#003c7b;
 	word-spacing: 0px;
 	display: inline-block;
 }
-#inner-circle2 a:nth-child(2){
+#infographic-01-inner-circle2 a:nth-child(2){
 	font-size: 30px;
 }
 
@@ -102,10 +102,10 @@ body {
 	#line2 {
 		width: 400px;
 	}
-	#inner-circle2 a:nth-child(1){
+	#infographic-01-inner-circle2 a:nth-child(1){
 		font-size: 40px;
 	}
-	#inner-circle2 a:nth-child(2){
+	#infographic-01-inner-circle2 a:nth-child(2){
 		font-size: 20px;
 	}
 }
@@ -121,10 +121,10 @@ body {
 	#line2 {
 		width: 280px;
 	}
-	#inner-circle2 a:nth-child(1){
+	#infographic-01-inner-circle2 a:nth-child(1){
 		font-size: 30px;
 	}
-	#inner-circle2 a:nth-child(2){
+	#infographic-01-inner-circle2 a:nth-child(2){
 		font-size: 15px;
 	}
 	#circle-con {
@@ -133,7 +133,7 @@ body {
 		margin-top: -95px;
 		margin-left: -100px;
 	}
-	#inner-circle {
+	#infographic-01-inner-circle {
 		height: 100px;
 		width: 100px;
 		padding: 22px;

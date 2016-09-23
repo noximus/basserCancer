@@ -28,6 +28,10 @@ var circle2 = false;
 var circle3 = false;
 var info4 = false;
 var info5 = false;
+var info6 = false;
+var info7 = false;
+var info8 = false;
+var info9 = false;
 
 $(window).scroll(function() {    
   
@@ -95,9 +99,10 @@ $(window).scroll(function() {
 
       setTimeout("$('.infographic04-right a:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 3400);
 
+      $('#under05-party').delay(5000).fadeTo(1000, 1);
     }
 
-    if (scroll > 1350 && info5 == false) {
+    if (scroll > 1500 && info5 == false) {
 
       info5 = true;
       time2 = 500;
@@ -118,7 +123,20 @@ $(window).scroll(function() {
 
     }
 
+    if (scroll > 2000 && info6 == false) {
+
+      info6 = true;
+      $('.infographic06-text').fadeTo(1000, 1);
+      $("#infographic06-bar1").delay(500).toggle( "slide", {direction: 'left'}, 4000 );
+      $("#infographic06-bar2").delay(500).toggle( "slide", {direction: 'left'}, 3500 );
+      $("#infographic06-bar3").delay(500).toggle( "slide", {direction: 'left'}, 3000 );
+      setTimeout("AnimateBars();", 1100);
+
+
+    }
+
 });
+
 
 
 function AnimateCircle(name, amount){
@@ -129,4 +147,21 @@ function AnimateCircle(name, amount){
     }).on('circle-animation-progress', function(event, progress, stepValue) {
       $(this).find('strong').html(String(stepValue.toFixed(2)).substr(2)).append("%");
     });
+}
+
+function AnimateBars(){
+        var options = {
+        useEasing : true, 
+        useGrouping : true, 
+        separator : ',', 
+        decimal : '.', 
+        prefix : '', 
+        suffix : '' 
+      };
+      var count1 = new CountUp("count1", 0, 75, 0, 4, options);
+      var count2 = new CountUp("count2", 0, 50, 0, 3.5, options);
+      var count3 = new CountUp("count3", 0, 25, 0, 3, options);
+      count1.start();
+      count2.start();
+      count3.start();
 }

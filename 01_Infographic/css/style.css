@@ -356,9 +356,12 @@ p {
 	width: 100%;
 	min-height: 300px;
 	background-color: #eefafc;
+	padding-top: 80px;
 }
 .infographic06-bar {
-	width: 50%;
-	height: 100%;
-	background-color: red;
+	height: 90px;
+	margin-top: 15px;
+}
+#infographic06-bar1 {
+	
 }

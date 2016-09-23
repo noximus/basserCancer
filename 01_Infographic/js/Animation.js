@@ -36,30 +36,43 @@ $(window).scroll(function() {
 
       $("#stripe1a").delay(500).toggle( "slide", {direction: 'left'} );
       $('#stripe3a').delay(500).toggle( "slide", {direction: 'right'} );
-      $(".circle-con").delay(1000).fadeTo("slow", 1);
+      $("#circle-con1").delay(1000).fadeTo("slow", 1);
         
         setTimeout("AnimateCircle('first-circle', .75);", 1000);
-      $("#line1b").delay(2300).fadeTo("slow", 1);
+      $("#line2a").delay(2300).fadeTo("slow", 1);
         circle1 = true;
 
     }
 
-    // if (scroll > 450 && circle2 == false) {
-    //    $("#line1b").fadeTo("slow", 1);
+    if (scroll > 450 && circle2 == false) {
 
-    //   $("#stripe1a").delay(500).toggle( "slide", {direction: 'left'} );
-    //   $('#stripe3a').delay(500).toggle( "slide", {direction: 'right'} );
-    //   $(".circle-con").delay(1000).fadeTo("slow", 1);
+      $("#line1b").fadeTo("slow", 1);
+
+      $("#stripe1b").delay(600).toggle( "slide", {direction: 'left'} );
+      $('#stripe3b').delay(600).toggle( "slide", {direction: 'right'} );
+      $("#circle-con2").delay(1100).fadeTo("slow", 1);
         
-    //     setTimeout("AnimateCircle('first-circle', .75);", 1000);
-    //   $("#line1b").delay(2300).fadeTo("slow", 1);
-    //     circle2 = true;
-    // }
+        setTimeout("AnimateCircle('second-circle', .50);", 1100);
 
-    //  if (scroll > 750 && circle3 == false) {
-    //   AnimateCircle('third-circle', .25);
-    //   circle3 = true;
-    // }
+      $("#line2b").delay(2400).fadeTo("slow", 1);
+
+        circle2 = true;
+    }
+
+     if (scroll > 750 && circle3 == false) {
+      
+      $("#line1c").fadeTo("slow", 1);
+
+      $("#stripe1c").delay(700).toggle( "slide", {direction: 'left'} );
+      $('#stripe3c').delay(700).toggle( "slide", {direction: 'right'} );
+      $("#circle-con3").delay(1200).fadeTo("slow", 1);
+        
+        setTimeout("AnimateCircle('third-circle', .25);", 1200);
+
+      $("#line2c").delay(2600).fadeTo("slow", 1);
+
+      circle3 = true;
+    }
 
 
 });

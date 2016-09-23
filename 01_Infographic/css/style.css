@@ -20,7 +20,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
     width:100%;
-  
+  	min-height: 400px;
     overflow:hidden;
     position: relative;
     margin-top:50px;

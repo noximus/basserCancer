@@ -25,7 +25,7 @@ BanTimeline.init();
 
 $('.first-circle').circleProgress({
   value: 0.75,
-  fill: {gradient: [['#0681c4', .5], ['#4ac5f8', .5]], gradientAngle: Math.PI / 4}
+  fill: {gradient: [['#b31423', .2], ['#d9182a', .5]], gradientAngle: Math.PI / 4}
 }).on('circle-animation-progress', function(event, progress, stepValue) {
-  $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2)).append("%");
+  $(this).find('strong').html(String(stepValue.toFixed(2)).substr(2)).append("%");
 });

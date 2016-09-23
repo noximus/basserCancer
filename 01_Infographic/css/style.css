@@ -17,6 +17,7 @@ p {
     margin-right: -100px;
 }
 .first-circle strong {
+	display: inline-block;
 	font-size: 40px;
 	position: absolute; 
 	top:50%;

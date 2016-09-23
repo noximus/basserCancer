@@ -2,6 +2,7 @@
 /* CSS Document */
 
 body {
+	padding-top:200px;
 	margin: 0;
 	background-color: #f6f6f6;
 }
@@ -9,14 +10,14 @@ p {
 	margin-top:0;
 	margin-bottom: 0;
 }
-.first-circle canvas{
+.anime-circle canvas{
     position: absolute;
     top: 50%;
     margin-top: -90px;
     right:50%;
     margin-right: -90px;
 }
-.first-circle strong {
+.anime-circle strong {
 	color: #003c7b;
 	display: inline-block;
 	font-size: 40px;

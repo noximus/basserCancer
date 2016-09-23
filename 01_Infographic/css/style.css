@@ -504,6 +504,7 @@ p {
 	font-size: 20px;
 	color: #003c79;
 	margin-top: 40px;
+	font-weight: 500;
 	margin-right: 20px;
 }
 
@@ -516,6 +517,81 @@ p {
 	background-repeat: no-repeat;
 	background-position: 
 }
+
+@media screen and (max-width: 850px){
+	.infographic07-right {
+		width: 50%;
+	}
+	.infographic07-left p {
+		height: 80px;
+		font-size: 20px;
+		line-height: 80px;
+		margin-bottom: 10px;
+	}
+	.infographic07-left p1 {
+		font-size: 15px;
+	} 
+}
+@media screen and (max-width: 750px) {
+	.infographic07-left {
+		margin-top: 95px;
+	}
+	.infographic07-left p {
+		height: 70px;
+		font-size: 18px;
+		line-height: 70px;
+
+	}
+	.infographic07-left p1 {
+		font-size: 15px;
+		margin-top: 20px;
+	} 
+}
+
+@media screen and (max-width: 650px) {
+	.infographic07-left {
+		margin-top: 75px;
+	}
+	.infographic07-left p {
+		height: 60px;
+		font-size: 18px;
+		line-height: 60px;
+		margin-bottom: 5px;
+	}
+	.infographic07-left p1 {
+		font-size: 12px;
+		margin-top: 10px;
+	} 
+}
+@media screen and (max-width: 550px) {
+	.infographic07-left {
+		margin-top: 65px;
+	}
+	.infographic07-left p {
+		height: 50px;
+		font-size: 15px;
+		line-height: 50px;
+	}
+	.infographic07-left p1 {
+		font-size: 9px;
+		margin-top: 10px;
+	} 
+}
+@media screen and (max-width: 450px) {
+	.infographic07-left {
+		margin-top: 50px;
+	}
+	.infographic07-left p {
+		height: 40px;
+		font-size: 15px;
+		line-height: 40px;
+	}
+	.infographic07-left p1 {
+		font-size: 8px;
+		margin-top: 5px;
+	} 
+}
+
 
 
 

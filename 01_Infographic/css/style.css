@@ -357,11 +357,67 @@ p {
 	min-height: 300px;
 	background-color: #eefafc;
 	padding-top: 80px;
+	padding-bottom: 80px;
 }
 .infographic06-bar {
-	height: 90px;
+	position: relative;
+	height: 85px;
 	margin-top: 15px;
+	text-align: right;
+	padding-top: 5px;
 }
 #infographic06-bar1 {
-	
+	width: 50%;
+	background-color: #40d1e4;
+	border-right: 10px solid #01739d;
+}
+#infographic06-bar2 {
+	width: 40%;
+	background-color: #f70000;
+	border-right: 10px solid #c40024;
+}
+#infographic06-bar3 {
+	width: 30%;
+
+	background-color: #2187c2;
+	border-right: 10px solid #0f3d7c;
+}
+.infographic06-bar-top {
+
+	margin-right: 15px;
+	height: 30px;
+	font-size: 24px;
+	color: white;
+	vertical-align: bottom;
+}
+.infographic06-bar-bot {
+	color: white;
+	height: 55px;
+	width: 100%;
+	font-size: 15px;
+
+}
+.infographic06-bar-left {
+	float: right;
+}
+.infographic06-bar-left p{
+	line-height: 16px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+.infographic06-bar-right {
+	margin-top: 2px;
+	float: right;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.infographic06-bar-right p {
+	display: inline-block;
+}
+.infographic06-bar-right p:nth-child(1) {
+	font-size: 50px;
+	letter-spacing: -3px;
+}
+.infographic06-bar-right p:nth-child(2) {
+	font-size: 20px;
 }

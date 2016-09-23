@@ -406,7 +406,7 @@ p {
 	border-bottom: 3px solid white;
 }
 .infographic06-bar-right {
-	margin-top: 2px;
+	margin-top: 3px;
 	float: right;
 	margin-right: 5px;
 	margin-left: 5px;
@@ -415,7 +415,7 @@ p {
 	display: inline-block;
 }
 .infographic06-bar-right p:nth-child(1) {
-	font-size: 50px;
+	font-size: 52px;
 	letter-spacing: -3px;
 }
 .infographic06-bar-right p:nth-child(2) {

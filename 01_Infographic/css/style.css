@@ -7,6 +7,7 @@ body {
 	background-color: #f6f6f6;
 }
 p {
+	color: #128cc4;
 	margin-top:0;
 	margin-bottom: 0;
 }
@@ -283,7 +284,8 @@ p {
 	margin: 80px auto 50px auto;
 	text-align: center;
 }
-.infographic05-con a {
+.infographic05-con p {
+	opacity: 0;
 	line-height: 35px;
 }
 #a-next-to {
@@ -295,6 +297,7 @@ p {
 	text-align: center;
 }
 .infographic05-party p{
+	opacity: 0;
 	z-index: 2;
 	position: relative;
 	width: 28px;
@@ -304,11 +307,15 @@ p {
 	background-image: url(../img/girl30.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	 transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear; /* Firefox 4 */
+    -webkit-transition: background 0.5s linear; /* Safari and Chrome */
+    -o-transition: background 0.5s linear; /* Opera */
 }
-.infographic05-party p:nth-child(1){
+/*.infographic05-party p:nth-child(1){
 	z-index: 3;
 	background-image: url(../img/girl.png);
-}
+}*/
 .infographic05-party p:nth-child(2), .infographic05-party p:nth-child(4), .infographic05-party p:nth-child(6), .infographic05-party p:nth-child(8), .infographic05-party p:nth-child(10), .infographic05-party p:nth-child(12), .infographic05-party p:nth-child(14), .infographic05-party p:nth-child(16), .infographic05-party p:nth-child(18), .infographic05-party p:nth-child(20), .infographic05-party p:nth-child(23), .infographic05-party p:nth-child(25), .infographic05-party p:nth-child(27), .infographic05-party p:nth-child(29), .infographic05-party p:nth-child(31), .infographic05-party p:nth-child(33), .infographic05-party p:nth-child(35), .infographic05-party p:nth-child(37), .infographic05-party p:nth-child(39), .infographic05-party p:nth-child(41){
 
 	background-image: url(../img/man.png);
@@ -316,6 +323,7 @@ p {
 
 
 #under05-party {
+	opacity: 0;
 	color: #003a7d;
 	font-size: 20px;
 	font-weight: 500;

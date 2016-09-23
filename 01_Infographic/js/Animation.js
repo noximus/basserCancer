@@ -77,11 +77,11 @@ $(window).scroll(function() {
     }
 
 
-    if (scroll > 1200 && info4 == false) {
+    if (scroll > 1100 && info4 == false) {
       var time = 500;
       info4 = true;
-      $("#info4top-a").delay(500).toggle( "slide", {direction: 'right'}, 500 );
-      $('#info4bot-a').delay(500).toggle( "slide", {direction: 'left'}, 500 );
+      $("#info4top").delay(500).toggle( "slide", {direction: 'right'}, 500 );
+      $('#info4bot').delay(500).toggle( "slide", {direction: 'left'}, 500 );
        
       $('.infographic04-left').delay(500).fadeTo(1000, 1);
       $('#red-inline').css("opacity","0");
@@ -90,10 +90,31 @@ $(window).scroll(function() {
         $(this).delay(time).fadeTo(500, 1);
         time += 200;
       });
-      $('#red-inline').delay(3450).fadeTo(1000, 1);
+      $('#red-inline').delay(3400).fadeTo(1000, 1);
   
 
-      setTimeout("$('.infographic04-right a:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 3500);
+      setTimeout("$('.infographic04-right a:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 3400);
+
+    }
+
+    if (scroll > 1350 && info5 == false) {
+
+      info5 = true;
+      time2 = 500;
+
+      $("#info5top").delay(500).toggle( "slide", {direction: 'right'}, 500 );
+      $('#info5bot').delay(500).toggle( "slide", {direction: 'left'}, 500 );
+      $('.info5-text').delay(500).fadeTo(1000, 1);
+    
+
+      $('.infographic05-party p').each(function(){
+        $(this).delay(time).fadeTo(500, 1);
+        time += 50;
+      });
+
+      $('#a-next-to').delay(4500).fadeTo(1000, 1);
+
+       setTimeout("$('.infographic05-party p:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 4500);
 
     }
 

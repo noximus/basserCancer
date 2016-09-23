@@ -12,11 +12,12 @@ p {
 .first-circle canvas{
     position: absolute;
     top: 50%;
-    margin-top: -100px;
+    margin-top: -90px;
     right:50%;
-    margin-right: -100px;
+    margin-right: -90px;
 }
 .first-circle strong {
+	color: #003c7b;
 	display: inline-block;
 	font-size: 40px;
 	position: absolute; 

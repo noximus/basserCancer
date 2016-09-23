@@ -26,6 +26,8 @@ BanTimeline.init();
 var circle1 = false;
 var circle2 = false;
 var circle3 = false;
+var info4 = false;
+var info5 = false;
 
 $(window).scroll(function() {    
   
@@ -74,6 +76,26 @@ $(window).scroll(function() {
       circle3 = true;
     }
 
+
+    if (scroll > 1200 && info4 == false) {
+      var time = 500;
+      info4 = true;
+      $("#info4top-a").delay(500).toggle( "slide", {direction: 'right'}, 500 );
+      $('#info4bot-a').delay(500).toggle( "slide", {direction: 'left'}, 500 );
+       
+      $('.infographic04-left').delay(500).fadeTo(1000, 1);
+      $('#red-inline').css("opacity","0");
+
+      $('.infographic04-right a').delay(1000).each(function(){
+        $(this).delay(time).fadeTo(500, 1);
+        time += 200;
+      });
+      $('#red-inline').delay(3450).fadeTo(1000, 1);
+  
+
+      setTimeout("$('.infographic04-right a:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 3500);
+
+    }
 
 });
 

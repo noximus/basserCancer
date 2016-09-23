@@ -10,23 +10,7 @@ p {
 	margin-top:0;
 	margin-bottom: 0;
 }
-.anime-circle canvas{
-    position: absolute;
-    top: 50%;
-    margin-top: -90px;
-    right:50%;
-    margin-right: -90px;
-}
-.anime-circle strong {
-	color: #003c7b;
-	display: inline-block;
-	font-size: 40px;
-	position: absolute; 
-	top:50%;
-	margin-top: -15px;
-	left: 50%;
-	margin-left:-40px;
-}
+
 
 #container {
 	background-color: #f6f6f6;
@@ -193,6 +177,7 @@ p {
 }
 .infographic04-con {
 	width: 700px;
+	min-height: 250px;
 	margin: 80px auto 0 auto;
 
 }
@@ -765,4 +750,23 @@ p {
 
 #infographic08-heart{
 	background-image: url(../img/heartBubble.png);
+}
+
+
+.anime-circle canvas{
+    position: absolute;
+    top: 50%;
+    margin-top: -90px;
+    right:50%;
+    margin-right: -90px;
+}
+.anime-circle strong {
+	color: #003c7b;
+	display: inline-block;
+	font-size: 40px;
+	position: absolute; 
+	top:50%;
+	margin-top: -15px;
+	left: 50%;
+	margin-left:-40px;
 }

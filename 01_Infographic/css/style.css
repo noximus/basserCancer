@@ -17,7 +17,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
     width:100%;
-    min-height: 300px;
+  
     overflow:hidden;
     position: relative;
     margin-top:50px;
@@ -196,7 +196,7 @@ p {
 .infographic04-right {
 	width: auto;
 	overflow: hidden;
-	min-height: 200px;
+
 	padding-left: 30px;
 	padding-top: 20px;
 } 
@@ -354,7 +354,7 @@ p {
 
 .infographic06-con {
 	width: 100%;
-	min-height: 300px;
+
 	background-color: #eefafc;
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -482,7 +482,6 @@ p {
 .infographic07-left {
 	float:left;
 	width: 50%;
-	min-height: 300px;
 	margin-top: 110px;
 }
 .infographic07-left p{
@@ -536,6 +535,9 @@ p {
 	.infographic07-left {
 		margin-top: 95px;
 	}
+	.infographic07-right {
+		height: 375px;
+	}
 	.infographic07-left p {
 		height: 70px;
 		font-size: 18px;
@@ -552,6 +554,9 @@ p {
 	.infographic07-left {
 		margin-top: 75px;
 	}
+	.infographic07-right {
+		height: 325px;
+	}
 	.infographic07-left p {
 		height: 60px;
 		font-size: 18px;
@@ -567,6 +572,9 @@ p {
 	.infographic07-left {
 		margin-top: 65px;
 	}
+	.infographic07-right {
+		height: 270px;
+	}
 	.infographic07-left p {
 		height: 50px;
 		font-size: 15px;
@@ -580,6 +588,9 @@ p {
 @media screen and (max-width: 450px) {
 	.infographic07-left {
 		margin-top: 50px;
+	}
+	.infographic07-right {
+		height: 200px;
 	}
 	.infographic07-left p {
 		height: 40px;
@@ -633,12 +644,13 @@ p {
 	font-weight: 500;
 	margin-right: 20px;
 	margin-bottom: 50px;
+
 }
 
 .infographic08-check {
 	position: absolute;
 	width: 50%;
-	height: 110%;
+	height: 115%;
 	top: -50px;
 	right: 0;
 	background-image: url(../img/checkBubble.png);
@@ -647,3 +659,87 @@ p {
 	background-position: 50% 50%;
 }
 
+@media screen and (max-width: 1200px){
+	.infographic08-lines p, .infographic08-text {
+		padding-left: 0;
+		margin-left: 10px;		
+	}
+}
+
+@media screen and (max-width: 850px){
+	.infographic08-lines {
+		height: 70px;
+		line-height: 70px;
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.infographic08-lines:nth-child(2) {
+		line-height: 25px;
+		height: 60px;
+		padding-top: 10px;
+	}
+	.infographic08-text {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.infographic08-lines {
+		height: 56px;
+		line-height: 56px;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.infographic08-lines:nth-child(2) {
+		line-height: 25px;
+		height: 56px;
+		padding-top: 10px;
+	}
+	.infographic08-text {
+		font-size: 12px;
+		margin-top: 30px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+	.infographic08-lines {
+		height: 45px;
+		line-height: 45px;
+		font-size: 15px;
+		margin-bottom: 8px;
+	}
+	.infographic08-lines:nth-child(2) {
+		line-height: 16px;
+		height: 39px;
+		padding-top: 6px;
+	}
+	.infographic08-text {
+		font-size: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.infographic08-con {
+		margin-top: 20px;
+	}
+	.infographic08-lines {
+		height: 45px;
+		line-height: 45px;
+		font-size: 15px;
+		margin-bottom: 8px;
+	}
+	.infographic08-lines:nth-child(2) {
+		line-height: 16px;
+		height: 39px;
+		padding-top: 6px;
+	}
+	.infographic08-text {
+		font-size: 8px;
+		margin-top: 10px;
+	}
+	.infographic08-check {
+		top:-30px;
+	}
+}

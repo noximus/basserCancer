@@ -619,7 +619,7 @@ p {
 	margin-bottom: 20px;
 	line-height: 100px;
 }
-.infographic08-lines:nth-child(2){
+#infographic08-doubleline {
 	background-color: #40d1e4;
 	line-height: 30px;
 	padding-top:20px;
@@ -673,7 +673,7 @@ p {
 		font-size: 24px;
 		margin-bottom: 10px;
 	}
-	.infographic08-lines:nth-child(2) {
+	#infographic08-doubleline  {
 		line-height: 25px;
 		height: 60px;
 		padding-top: 10px;
@@ -690,7 +690,7 @@ p {
 		font-size: 20px;
 		margin-bottom: 10px;
 	}
-	.infographic08-lines:nth-child(2) {
+	#infographic08-doubleline  {
 		line-height: 25px;
 		height: 56px;
 		padding-top: 10px;
@@ -709,7 +709,7 @@ p {
 		font-size: 15px;
 		margin-bottom: 8px;
 	}
-	.infographic08-lines:nth-child(2) {
+	#infographic08-doubleline  {
 		line-height: 16px;
 		height: 39px;
 		padding-top: 6px;
@@ -730,7 +730,7 @@ p {
 		font-size: 15px;
 		margin-bottom: 8px;
 	}
-	.infographic08-lines:nth-child(2) {
+	#infographic08-doubleline {
 		line-height: 16px;
 		height: 39px;
 		padding-top: 6px;
@@ -742,4 +742,8 @@ p {
 	.infographic08-check {
 		top:-30px;
 	}
+}
+
+#infographic08-heart{
+	background-image: url(../img/heartBubble.png);
 }

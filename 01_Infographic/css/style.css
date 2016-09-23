@@ -30,30 +30,35 @@ p {
     display: block;
    color: #128cc4;
 }
-#stripe1 {
+.stripe1 {
+	display: none;
     height: 45px;
     background-color: #003c7b;
 }
-#stripe2{
+.stripe2{
 	background-color: #f6f6f6;
     height: 20px;
 }
-#stripe3 {
+.stripe3 {
+	display: none; 
 	background-color: #6ddaed;
     height: 45px;
 }
-#line1 {
+.line1 {
+	opacity: 0;
 	width: 550px;
 	text-align: left;
 	margin: 52px auto 30px auto
 }
-#line2 {
+.line2 {
+	opacity: 0;
 	width: 550px;
 	text-align: right;
 	margin: 20px auto 60px auto;
 }
 
-#circle-con {
+.circle-con {
+	opacity: 0;
 	width: 175px;
 	height: 175px;
 	border-radius: 50%;
@@ -112,10 +117,10 @@ p {
 		font-size: 18px;
 		line-height: 25px;
 	}
-	#line1 {
+	.line1 {
 		width: 400px;
 	}
-	#line2 {
+	.line2 {
 		width: 400px;
 	}
 	#infographic-01-inner-circle2 a:nth-child(1){
@@ -131,10 +136,10 @@ p {
 		font-size: 15px;
 		line-height: 25px;
 	}
-	#line1 {
+	.line1 {
 		width: 280px;
 	}
-	#line2 {
+	.line2 {
 		width: 280px;
 	}
 	#infographic-01-inner-circle2 a:nth-child(1){
@@ -143,7 +148,7 @@ p {
 	#infographic-01-inner-circle2 a:nth-child(2){
 		font-size: 15px;
 	}
-	#circle-con {
+	.circle-con {
 		width: 145px;
 		height: 145px;
 		margin-top: -95px;

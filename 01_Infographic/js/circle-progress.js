@@ -37,7 +37,7 @@ License: MIT
          * Width of the arc. By default it's auto-calculated as 1/14 of size, but you may set it explicitly in pixels
          * @type {number|string}
          */
-        thickness: 'auto',
+        thickness: '30',
 
         /**
          * Fill of the arc. You may set it to:

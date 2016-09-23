@@ -5,7 +5,7 @@
 <title>01_Infographic</title>
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 </head>
 <body>
 
@@ -13,12 +13,12 @@
    <!-- Infographic 01 -->
     <div id="container">
           <!-- Content -->
-          <a id="line1">Women who carry a BRCA mutation <br>have up to a</a>
-          <a id="stripe1"></a>
-          <a id="stripe2"></a>
-          <a id="stripe3"></a>
-          <a id="line2">lifetime risk of<br>developing breast cancer.</a>
-          <div id="circle-con">
+          <a class="line1" id="line1a">Women who carry a BRCA mutation <br>have up to a</a>
+          <p class="stripe1" id="stripe1a"></p>
+          <p class="stripe2"></p>
+          <p class="stripe3" id="stripe3a"></p>
+          <a class="line2" id="line1b">lifetime risk of<br>developing breast cancer.</a>
+          <div class="circle-con" id="circle-con1">
 
               <div class="anime-circle first-circle">
                 <strong></strong>
@@ -32,12 +32,12 @@
   <!-- Infographic 02 -->
       <div id="container">
           <!-- Content -->
-          <a id="line1">Women who carry a BRCA mutation <br>have up to a</a>
-          <a id="stripe1"></a>
-          <a id="stripe2"></a>
-          <a id="stripe3"></a>
-          <a id="line2">lifetime risk of<br>developing ovarian cancer.</a>
-          <div id="circle-con">
+          <a class="line1" id="line1b">Women who carry a BRCA mutation <br>have up to a</a>
+          <p class="stripe1" id="stripe1b"></p>
+          <p class="stripe2"></p>
+          <p class="stripe3" id="stripe3b"></p>
+          <a class="line2" id="line2b">lifetime risk of<br>developing ovarian cancer.</a>
+          <div class="circle-con" id="circle-con2">
 
              <div class="anime-circle second-circle">
                 <strong></strong>
@@ -51,11 +51,11 @@
   <!-- Infographic 03 -->
       <div id="container">
           <!-- Content -->
-          <a id="line1">Men who carry a BRCA mutation <br>have up to a</a>
-          <a id="stripe1"></a>
-          <a id="stripe2"></a>
-          <a id="stripe3"></a>
-          <a id="line2">lifetime risk of<br>developing prostate cancer.</a>
+          <a class="line1">Men who carry a BRCA mutation <br>have up to a</a>
+          <p id="stripe1"></p>
+          <p id="stripe2"></p>
+          <p id="stripe3"></p>
+          <a class="line2">lifetime risk of<br>developing prostate cancer.</a>
           <div id="circle-con">
               
             <div class="anime-circle third-circle">
@@ -230,6 +230,7 @@
   <script type="text/javascript" src="./js/circle-progress.js"></script>
   <script type="text/javascript" src="./js/countUp.js"></script>
   <script type="text/javascript" src="./js/Animation.js"></script>
+  <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
 
 
 </body>

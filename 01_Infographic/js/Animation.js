@@ -30,28 +30,43 @@ var circle3 = false;
 $(window).scroll(function() {    
   
     var scroll = $(window).scrollTop();
-    if (scroll > 200 && circle1 == false) {
+    if (scroll > 100 && circle1 == false) {
 
-      AnimateCircle('first-circle', .75);
-      circle1 = true;
+      $("#line1a").fadeTo("slow", 1);
+
+      $("#stripe1a").delay(500).toggle( "slide", {direction: 'left'} );
+      $('#stripe3a').delay(500).toggle( "slide", {direction: 'right'} );
+      $(".circle-con").delay(1000).fadeTo("slow", 1);
+        
+        setTimeout("AnimateCircle('first-circle', .75);", 1000);
+      $("#line1b").delay(2300).fadeTo("slow", 1);
+        circle1 = true;
 
     }
 
-    if (scroll > 450 && circle2 == false) {
-      AnimateCircle('second-circle', .50);
-      circle2 = true;
-    }
+    // if (scroll > 450 && circle2 == false) {
+    //    $("#line1b").fadeTo("slow", 1);
 
-     if (scroll > 750 && circle3 == false) {
-      AnimateCircle('third-circle', .25);
-      circle3 = true;
-    }
+    //   $("#stripe1a").delay(500).toggle( "slide", {direction: 'left'} );
+    //   $('#stripe3a').delay(500).toggle( "slide", {direction: 'right'} );
+    //   $(".circle-con").delay(1000).fadeTo("slow", 1);
+        
+    //     setTimeout("AnimateCircle('first-circle', .75);", 1000);
+    //   $("#line1b").delay(2300).fadeTo("slow", 1);
+    //     circle2 = true;
+    // }
+
+    //  if (scroll > 750 && circle3 == false) {
+    //   AnimateCircle('third-circle', .25);
+    //   circle3 = true;
+    // }
 
 
 });
 
 
 function AnimateCircle(name, amount){
+
   $('.'+ name).circleProgress({
       value: amount,
       fill: {gradient: [['#b31423', .2], ['#d9182a', .5]], gradientAngle: Math.PI / 4}

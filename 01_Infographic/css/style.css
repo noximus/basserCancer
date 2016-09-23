@@ -9,16 +9,21 @@ p {
 	margin-top:0;
 	margin-bottom: 0;
 }
-
-.circle {
-	/*width: 100px;
-    margin: 6px 6px 20px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    line-height: 1.2;*/
+.first-circle canvas{
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    right:50%;
+    margin-right: -100px;
 }
-
+.first-circle strong {
+	font-size: 40px;
+	position: absolute; 
+	top:50%;
+	margin-top: -15px;
+	left: 50%;
+	margin-left:-40px;
+}
 
 #container {
 	background-color: #f6f6f6;

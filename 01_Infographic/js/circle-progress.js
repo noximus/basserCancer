@@ -25,7 +25,7 @@ License: MIT
          * Size of the circle / canvas in pixels
          * @type {number}
          */
-        size: 100.0,
+        size: 200.0,
 
         /**
          * Initial angle for 0.0 value in radians

@@ -421,3 +421,53 @@ p {
 .infographic06-bar-right p:nth-child(2) {
 	font-size: 20px;
 }
+.infographic06-text {
+	width: 350px;
+	height: 200px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 2%;
+	margin-right: 15%;
+}
+.infographic06-text p {
+	color: #128cc4;
+	font-size: 36px;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+	.infographic06-text {
+		margin-right: 5%;
+	}
+}
+@media screen and (max-width: 700px) {
+	.infographic06-text {
+		margin-right: 0;
+	}
+	.infographic06-text p  {
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 500px) {
+
+	.infographic06-text p  {
+		font-size: 24px;
+		margin-bottom: 0;
+	}
+	.infographic06-text {
+		height: 166px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.infographic06-text p  {
+		font-size: 16px;
+	}
+	.infographic06-bar-top {
+		font-size: 18px;
+	}
+	.infographic06-bar-right p:nth-child(1) {
+		font-size: 36px;
+	}
+}

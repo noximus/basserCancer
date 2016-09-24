@@ -152,10 +152,20 @@ $(window).scroll(function() {
       $('#infographic08-doubleline').delay(500).toggle( "slide", {direction: 'left'}, 800 );
       $('#info8line2').delay(500).toggle( "slide", {direction: 'right'}, 800 );
       $('#info8check').delay(1500).fadeIn();
+      $('#info8text').delay(1000).fadeTo(2000, 1);
 
     }
 
+    if (scroll > 3700 && info9 == false) {
 
+      info9 = true;
+      $('#info9line1').delay(500).toggle( "slide", {direction: 'right'}, 800 );
+      $('#info9line2').delay(500).toggle( "slide", {direction: 'left'}, 800 );
+      $('#info9line3').delay(500).toggle( "slide", {direction: 'right'}, 800 );
+      $('#infographic08-heart').delay(1500).fadeIn();
+      $('#info9text').delay(1000).fadeTo(2000,1);
+
+    }
 
 });
 

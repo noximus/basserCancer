@@ -720,6 +720,14 @@ p {
 	-webkit-animation-timing-function: ease-out;
 }
 
+#info9line2 {
+	background-color: #40d1e4;
+}
+
+#info9line3 {
+	background-color: #003c79;
+}
+
 @media screen and (max-width: 1200px){
 	.infographic08-lines p, .infographic08-text {
 		padding-left: 0;

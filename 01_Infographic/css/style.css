@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	padding-top:200px;
+
 	margin: 0;
 	background-color: #f6f6f6;
 }
@@ -13,7 +13,8 @@ p {
 }
 
 
-#container {
+.container {
+
 	background-color: #f6f6f6;
 	font-size: 30px;
 	letter-spacing: 0.5px;
@@ -27,7 +28,14 @@ p {
     margin-top:50px;
 }
 
-#container a{
+#info04-con, #info05-con, #info06-con, #info07-con, #info08-con, #info09-con {
+	padding-top: 100px;
+}
+#info09-con {
+	margin-bottom: 400px;
+}
+
+.container a{
     display: block;
    color: #128cc4;
 }
@@ -107,14 +115,14 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-	#container a {
+	.container a {
 		font-size: 21px;
 	}
 
 }
 
 @media screen and (max-width: 600px) {
-	#container a {
+	.container a {
 		font-size: 18px;
 		line-height: 25px;
 	}
@@ -133,7 +141,7 @@ p {
 }
 @media screen and (max-width: 425px) {
 
-	#container a {
+	.container a {
 		font-size: 15px;
 		line-height: 25px;
 	}
@@ -261,7 +269,7 @@ p {
 		margin-top: 20px;
 		width: 30px;
 	}
-	#container a {
+	.container a {
 		font-size: 15px;
 	}
 }
@@ -370,7 +378,7 @@ p {
 		width: 17px;
 		height: 40px;
 	}
-	#container a {
+	.container a {
 		font-size: 11px;
 	}
 }

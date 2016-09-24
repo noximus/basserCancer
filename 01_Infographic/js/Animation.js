@@ -33,10 +33,7 @@ var info7 = false;
 var info8 = false;
 var info9 = false;
 
-$(window).scroll(function() {    
-  
-    var scroll = $(window).scrollTop();
-    if (scroll > 100 && circle1 == false) {
+function CircleOne(){
 
       $("#line1a").fadeTo("slow", 1);
 
@@ -47,26 +44,23 @@ $(window).scroll(function() {
         setTimeout("AnimateCircle('first-circle', .75);", 1000);
       $("#line2a").delay(2300).fadeTo("slow", 1);
         circle1 = true;
+}
 
-    }
+function CircleTwo(){
+    $("#line1b").fadeTo("slow", 1);
 
-    if (scroll > 450 && circle2 == false) {
-
-      $("#line1b").fadeTo("slow", 1);
-
-      $("#stripe1b").delay(600).toggle( "slide", {direction: 'left'} );
-      $('#stripe3b').delay(600).toggle( "slide", {direction: 'right'} );
-      $("#circle-con2").delay(1100).fadeTo("slow", 1);
-        
-        setTimeout("AnimateCircle('second-circle', .50);", 1100);
-
-      $("#line2b").delay(2400).fadeTo("slow", 1);
-
-        circle2 = true;
-    }
-
-     if (scroll > 750 && circle3 == false) {
+    $("#stripe1b").delay(600).toggle( "slide", {direction: 'left'} );
+    $('#stripe3b').delay(600).toggle( "slide", {direction: 'right'} );
+    $("#circle-con2").delay(1100).fadeTo("slow", 1);
       
+      setTimeout("AnimateCircle('second-circle', .50);", 1100);
+
+    $("#line2b").delay(2400).fadeTo("slow", 1);
+
+      circle2 = true;
+}
+
+function CircleThree(){
       $("#line1c").fadeTo("slow", 1);
 
       $("#stripe1c").delay(700).toggle( "slide", {direction: 'left'} );
@@ -78,10 +72,9 @@ $(window).scroll(function() {
       $("#line2c").delay(2600).fadeTo("slow", 1);
 
       circle3 = true;
-    }
+}
 
-
-    if (scroll > 1100 && info4 == false) {
+function InfoFour(){
       var time = 500;
       info4 = true;
       $("#info4top").delay(500).toggle( "slide", {direction: 'right'}, 500 );
@@ -99,11 +92,10 @@ $(window).scroll(function() {
 
       setTimeout("$('.infographic04-right a:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 3200);
 
-      $('#under05-party').delay(5000).fadeTo(1000, 1);
-    }
+      
+}
 
-    if (scroll > 1500 && info5 == false) {
-
+function InfoFive(){
       info5 = true;
 
       var time2 = 1000;
@@ -122,49 +114,91 @@ $(window).scroll(function() {
 
        setTimeout("$('.infographic05-party p:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 4500);
 
-    }
+      $('#under05-party').delay(5000).fadeTo(1000, 1);
+}
 
-    if (scroll > 2000 && info6 == false) {
-
+function InfoSix(){
       info6 = true;
       $('.infographic06-text').fadeTo(1000, 1);
       $("#infographic06-bar1").delay(500).toggle( "slide", {direction: 'left'}, 4000 );
       $("#infographic06-bar2").delay(500).toggle( "slide", {direction: 'left'}, 3500 );
       $("#infographic06-bar3").delay(500).toggle( "slide", {direction: 'left'}, 3000 );
       setTimeout("AnimateBars();", 1100);
+}
 
-    }
-
-    if (scroll > 2700 && info7 == false ) {
-
-      info7 = true;
+function InfoSeven(){
+        info7 = true;
        $(".infographic07-left .info07bars").delay(500).toggle( "slide", {direction: 'left'}, 2000 );
        setTimeout("AnimateBarsTwo();", 1000);
        $(".infographic07-right").delay(500).toggle( "slide", {direction: 'down'}, 2000 );
        // $(".infographic07-right").fadeTo(2000, 1);
        $('.infographic07-left p1').delay(2000).fadeTo(2000, 1);
+}
 
-    }
-
-    if (scroll > 3300 && info8 == false) {
-
+function InfoEight(){
       info8 = true;
       $('#info8line1').delay(500).toggle( "slide", {direction: 'right'}, 800 );
       $('#infographic08-doubleline').delay(500).toggle( "slide", {direction: 'left'}, 800 );
       $('#info8line2').delay(500).toggle( "slide", {direction: 'right'}, 800 );
       $('#info8check').delay(1500).fadeIn();
       $('#info8text').delay(1000).fadeTo(2000, 1);
+}
 
-    }
-
-    if (scroll > 3700 && info9 == false) {
-
+function InfoNine(){
       info9 = true;
       $('#info9line1').delay(500).toggle( "slide", {direction: 'right'}, 800 );
       $('#info9line2').delay(500).toggle( "slide", {direction: 'left'}, 800 );
       $('#info9line3').delay(500).toggle( "slide", {direction: 'right'}, 800 );
       $('#infographic08-heart').delay(1500).fadeIn();
       $('#info9text').delay(1000).fadeTo(2000,1);
+
+}
+
+
+$(window).scroll(function(){
+    if($(this).scrollTop()>=$('#info01-con').position().top && circle1 == false){
+
+        CircleOne();
+
+    }
+    if($(this).scrollTop()>=$('#info02-con').position().top && circle2 == false){
+
+        CircleTwo();
+
+    }
+    if($(this).scrollTop()>=$('#info03-con').position().top && (circle3 == false)){
+
+      CircleThree();
+
+    }
+    if($(this).scrollTop()>=$('#info04-con').position().top && (info4 == false)){
+
+      InfoFour();
+
+    }
+    if($(this).scrollTop()>=$('#info05-con').position().top && (info5 == false)){
+
+      InfoFive();
+
+    }
+    if($(this).scrollTop()>=$('#info06-con').position().top && (info6 == false)){
+
+      InfoSix();
+
+    }
+    if($(this).scrollTop()>=$('#info07-con').position().top && (info7 == false)){
+
+      InfoSeven();
+
+    }
+    if($(this).scrollTop()>=$('#info08-con').position().top && (info8 == false)){
+
+      InfoEight();
+
+    }
+    if($(this).scrollTop()>=$('#info09-con').position().top && (info9 == false)){
+
+      InfoNine();
 
     }
 

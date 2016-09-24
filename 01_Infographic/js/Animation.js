@@ -132,6 +132,14 @@ $(window).scroll(function() {
       $("#infographic06-bar3").delay(500).toggle( "slide", {direction: 'left'}, 3000 );
       setTimeout("AnimateBars();", 1100);
 
+    }
+
+    if (scroll > 2700 && info7 == false ) {
+
+      info7 = true;
+       $(".infographic07-left .info07bars").delay(500).toggle( "slide", {direction: 'left'}, 2000 );
+       setTimeout("AnimateBarsTwo();", 1000);
+       $(".infographic07-right").delay(500).toggle( "slide", {direction: 'down'}, 3000 );
 
     }
 
@@ -164,4 +172,20 @@ function AnimateBars(){
       count1.start();
       count2.start();
       count3.start();
+}
+function AnimateBarsTwo(){
+        var options = {
+        useEasing : true, 
+        useGrouping : true, 
+        separator : ',', 
+        decimal : '.', 
+        prefix : '', 
+        suffix : '' 
+      };
+      var count1 = new CountUp("count4", 0, 10, 0, 6, options);
+      var count2 = new CountUp("count5", 0, 1568, 0, 4, options);
+    
+      count1.start();
+      count2.start();
+     
 }

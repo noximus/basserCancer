@@ -513,18 +513,24 @@ p {
 	width: 50%;
 	margin-top: 110px;
 }
-.infographic07-left p{
-
+.infographic07-left .info07bars {
+	display: none;
 	vertical-align: middle;
 	color:white;
 	width: 100%;
 	margin-bottom: 15px;
 	line-height: 90px;
 	height: 90px;
-	background-color: #40d1e4;
 	text-align: center;
 }
-.infographic07-left p:nth-child(2){
+.infographic07-left p {
+	display: inline-block;
+	color: white;
+}
+#info07-bar1{
+	background-color: #40d1e4;
+}
+#info07-bar2{
 	background-color: #003c79;
 }
 .infographic07-left p1 {
@@ -534,9 +540,11 @@ p {
 	margin-top: 40px;
 	font-weight: 500;
 	margin-right: 20px;
+	opacity: 0;
 }
 
 .infographic07-right {
+	display: none;
 	width: 410px;
 	height: 430px;
 	float: left;
@@ -544,7 +552,10 @@ p {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 
+
 }
+
+
 
 @media screen and (max-width: 850px){
 	.infographic07-right {

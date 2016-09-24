@@ -105,7 +105,7 @@ $(window).scroll(function() {
     if (scroll > 1500 && info5 == false) {
 
       info5 = true;
-      time2 = 500;
+      var time2 = 500;
 
       $("#info5top").delay(500).toggle( "slide", {direction: 'right'}, 500 );
       $('#info5bot').delay(500).toggle( "slide", {direction: 'left'}, 500 );
@@ -113,8 +113,8 @@ $(window).scroll(function() {
     
 
       $('.infographic05-party p').each(function(){
-        $(this).delay(time).fadeTo(500, 1);
-        time += 50;
+        $(this).delay(time2).fadeTo(1000, 1);
+        time2 += 50;
       });
 
       $('#a-next-to').delay(4500).fadeTo(1000, 1);

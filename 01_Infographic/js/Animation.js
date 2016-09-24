@@ -105,7 +105,7 @@ $(window).scroll(function() {
     if (scroll > 1500 && info5 == false) {
 
       info5 = true;
-      var time2 = 500;
+      var time2 = 1000;
 
       $("#info5top").delay(500).toggle( "slide", {direction: 'right'}, 500 );
       $('#info5bot').delay(500).toggle( "slide", {direction: 'left'}, 500 );

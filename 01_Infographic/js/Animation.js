@@ -94,10 +94,10 @@ $(window).scroll(function() {
         $(this).delay(time).fadeTo(500, 1);
         time += 200;
       });
-      $('#red-inline').delay(3400).fadeTo(1000, 1);
+      $('#red-inline').delay(3600).fadeTo(1000, 1);
   
 
-      setTimeout("$('.infographic04-right a:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 3400);
+      setTimeout("$('.infographic04-right a:nth-child(1)').delay(6000).css(\"background-image\", \"url(img/girl.png)\");", 3200);
 
       $('#under05-party').delay(5000).fadeTo(1000, 1);
     }
@@ -105,7 +105,7 @@ $(window).scroll(function() {
     if (scroll > 1500 && info5 == false) {
 
       info5 = true;
-      
+
       var time2 = 1000;
 
       $("#info5top").delay(500).toggle( "slide", {direction: 'right'}, 500 );

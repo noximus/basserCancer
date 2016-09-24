@@ -139,9 +139,23 @@ $(window).scroll(function() {
       info7 = true;
        $(".infographic07-left .info07bars").delay(500).toggle( "slide", {direction: 'left'}, 2000 );
        setTimeout("AnimateBarsTwo();", 1000);
-       $(".infographic07-right").delay(500).toggle( "slide", {direction: 'down'}, 3000 );
+       $(".infographic07-right").delay(500).toggle( "slide", {direction: 'down'}, 2000 );
+       // $(".infographic07-right").fadeTo(2000, 1);
+       $('.infographic07-left p1').delay(2000).fadeTo(2000, 1);
 
     }
+
+    if (scroll > 3300 && info8 == false) {
+
+      info8 = true;
+      $('#info8line1').delay(500).toggle( "slide", {direction: 'right'}, 800 );
+      $('#infographic08-doubleline').delay(500).toggle( "slide", {direction: 'left'}, 800 );
+      $('#info8line2').delay(500).toggle( "slide", {direction: 'right'}, 800 );
+      $('#info8check').delay(1500).fadeIn();
+
+    }
+
+
 
 });
 
@@ -183,7 +197,7 @@ function AnimateBarsTwo(){
         suffix : '' 
       };
       var count1 = new CountUp("count4", 0, 10, 0, 6, options);
-      var count2 = new CountUp("count5", 0, 1568, 0, 4, options);
+      var count2 = new CountUp("count5", 0, 1568, 0, 3, options);
     
       count1.start();
       count2.start();

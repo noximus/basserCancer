@@ -226,12 +226,18 @@ function AnimateBarsTwo(){
 
 
 // Animation for navbar
-var timenav = 500;
+// var timenav = 500;
 $( document ).ready(function() {
     
     $('.menu-item a').delay(1000).each(function(){
-        $(this).delay(timenav).animate({left: '0'}, 2000 ); 
-        timenav += 500; 
+      var tween = TweenLite.to($(this), 2, {
+        x:0,
+        ease:Power1.easeInOut,
+        delay:.5
+      });        
+
+        // $(this).delay(timenav).animate({left: '0'}, 2000 ); 
+        // timenav += 500; 
     });
 });
 

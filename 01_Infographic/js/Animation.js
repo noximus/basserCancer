@@ -226,14 +226,14 @@ function AnimateBarsTwo(){
 
 
 // Animation for navbar
-var timenav = 500;
+var timenav = 2000;
 $( document ).ready(function() {
     
     $('.menu-item a').delay(1000).each(function(){
         $(this).delay(timenav).animate({
    left: '0'
     
-  }, 500 );
+  }, 1500 );
      timenav += 50;
       });
 });

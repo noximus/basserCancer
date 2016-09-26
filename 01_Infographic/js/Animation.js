@@ -248,3 +248,15 @@ function AnimateBarsTwo(){
       count2.start();
      
 }
+
+
+// Animation for navbar
+var timenav = 500;
+$( document ).ready(function() {
+    
+    $('.menu-item').delay(500).each(function(){
+        $(this).delay(timenav).toggle( "slide", {direction: 'left'} );
+        timenav += 200;
+      });
+});
+

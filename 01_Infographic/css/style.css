@@ -911,3 +911,18 @@ p {
 		opacity: 1;
 	}				
 }
+
+
+/* Navigation menu animation */
+
+
+.menu--top-menu {
+	width: 100%;
+}
+.menu--top-menu .menu-item {
+	display: none;
+}
+
+
+
+

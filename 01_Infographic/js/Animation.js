@@ -254,9 +254,12 @@ function AnimateBarsTwo(){
 var timenav = 500;
 $( document ).ready(function() {
     
-    $('.menu-item').delay(500).each(function(){
-        $(this).delay(timenav).toggle( "slide", {direction: 'left'} );
-        timenav += 200;
+    $('.menu-item a').delay(1000).each(function(){
+        $(this).delay(timenav).animate({
+   left: '0'
+    
+  }, 500 );
+     timenav += 50;
       });
 });
 
